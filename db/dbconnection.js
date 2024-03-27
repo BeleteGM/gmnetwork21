@@ -34,7 +34,6 @@ const dbconnection = mysql.createPool({
         title varchar(100) not null,
         description varchar(255) not null,
         tag varchar(20),
-       
         PRIMARY KEY(id,questionid),
         FOREIGN KEY (userid) REFERENCES users(userid)
     )`;

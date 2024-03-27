@@ -24,7 +24,7 @@ async function start() {
     app.listen(port);
     console.log("DB connection established");
     console.log(`listening on port  http://localhost:${port}`);
-  } catch (error) {
+  } catch (err) {
     console.log(err.message);
   }
 }
